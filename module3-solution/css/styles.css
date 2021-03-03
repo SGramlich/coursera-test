@@ -1,0 +1,53 @@
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+  color: black;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+  color: black;
+}
+
+.navbar-default{
+	text-align: center;
+	width: 100%;
+	color: black;
+}
+
+.navbar-nav > li > a{
+    border-color: #e7e7e7;
+    background-color: #0f0;
+}
+
+#bs-example-navbar-collapse-1{
+	background-color: #0f0;
+}
+
+li {
+	border: 1px solid black;
+	background-color: #0f0;
+}
+
+a{
+	color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+
+.container {
+	background-color: #aaa;
+}
+
+@media (min-width: 768px) {
+#bs-example-navbar-collapse-1{
+	background-color: transparent;
+}
+}
