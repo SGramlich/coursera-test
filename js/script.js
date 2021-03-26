@@ -118,7 +118,7 @@ function buildAndShowHomeHTML (categories) {
       //
       var html = homeHtml;
       console.log(html);
-      var homeHtmlToInsertIntoMainPage = insertProperty(html, "short_name", chosenCategoryShortName);
+      var homeHtmlToInsertIntoMainPage = insertProperty(html, "short_name", "'" + chosenCategoryShortName + "'");
       console.log(homeHtmlToInsertIntoMainPage);
 
 
@@ -155,7 +155,6 @@ dc.loadMenuCategories = function () {
 // 'categoryShort' is a short_name for a category
 dc.loadMenuItems = function (categoryShort) {
   showLoading("#main-content");
-  console.log(categoryShort);
   $ajaxUtils.sendGetRequest(
     menuItemsUrl + categoryShort,
     buildAndShowMenuItemsHTML);
